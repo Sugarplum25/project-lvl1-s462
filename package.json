@@ -1,18 +1,22 @@
 {
   "name": "brain_games_by_mari",
   "version": "1.1.0",
-  "description": "coming soon",
+  "description": "brain_games",
   "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
     "dist"
-],
+  ],
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "brain games",
+    "hexlet",
+],
   "author": "mari",
   "license": "ISC",
   "devDependencies": {
@@ -20,5 +24,8 @@
     "@babel/core": "^7.3.4",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   }
 }
