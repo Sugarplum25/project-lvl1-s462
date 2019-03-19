@@ -3,3 +3,5 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/05c034052bec22aa9277/test_coverage)](https://codeclimate.com/github/Sugarplum25/project-lvl1-s462/test_coverage)
 
 [![Build Status](https://travis-ci.com/Sugarplum25/project-lvl1-s462.svg?branch=master)](https://travis-ci.com/Sugarplum25/project-lvl1-s462)
+
+[![asciicast](https://asciinema.org/a/li5vjwlsKblpfJgsWT40v4al8.svg)](https://asciinema.org/a/li5vjwlsKblpfJgsWT40v4al8)
