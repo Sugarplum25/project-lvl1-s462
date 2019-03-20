@@ -1,5 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env nodejs
 
-// import wellcome from '..';
+import wellcome from '..';
 
-// wellcome();
+wellcome();
