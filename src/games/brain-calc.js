@@ -11,7 +11,7 @@ const numberTwo = numberGenerator();
 const listOfOperators = ['+', '-', '*'];
 const findRandomOperator = Math.floor(Math.random() * listOfOperators.length);
 const randomOperator = listOfOperators[findRandomOperator];
-const generateQuestion = (`${numberOne} ${randomOperator} ${numberTwo}`);
+const generateQuestion = () => (`${numberOne} ${randomOperator} ${numberTwo}`);
 
 const pickExpression = (char) => {
   let resultOfExpression;
@@ -39,7 +39,7 @@ const calcGame = () => {
   console.log('What is the result of the expression?');
 
   const iterRound = (round) => {
-    console.log(`Question: ${generateQuestion}`);
+    console.log(`Question: ${generateQuestion()}`);
 
     const trueAnswear = String(pickExpression(randomOperator));
 
