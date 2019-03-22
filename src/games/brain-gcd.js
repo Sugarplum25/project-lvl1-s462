@@ -1,41 +1,21 @@
-import readlineSync from 'readline-sync';
+import gamePlay from '..';
 
-import {
-  generateNumber,
-} from '../utilis';
+import generateNumber from '../utilis';
 
-
-const gcdGame = () => {
-  const gameRound = 3;
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${userName}!`);
-  console.log('Find the greatest common divisor of given numbers');
-
-  for (let i = 0; i < gameRound; i += 1) {
-    const gcd = (num1, num2) => {
-      if (!num2) {
-        return num1;
-      }
-      return gcd(num2, num1 % num2);
-    };
-    const numberOne = generateNumber(1, 10);
-    const numberTwo = generateNumber(1, 10);
-    const gameQuestion = `${numberOne}, ${numberTwo}`;
-    console.log(`Question: ${gameQuestion}`);
-    const rightAnswear = gcd(numberOne, numberTwo);
-    const userAnswear = Number(readlineSync.question('Your answer: '));
-    console.log(`Correct answer was ${rightAnswear}`);
-    if (userAnswear === rightAnswear) {
-      console.log('Correct!');
-    } else {
-      console.log(`${userAnswear} is wrong answer ;(. Correct answer was ${rightAnswear}.`);
-      console.log(`Let's try again, ${userName}`);
-      return;
-    }
+const gcd = (num1, num2) => {
+  if (!num2) {
+    return num1;
   }
-  console.log(`Congratulations, ${userName}!`);
+  return gcd(num2, num1 % num2);
+};
+const gameName = 'Find the greatest common divisor of given numbers';
+
+const gameQuestion = () => {
+  const numberOne = generateNumber(1, 10);
+  const numberTwo = generateNumber(1, 10);
+  const askQuestion = `${numberOne}, ${numberTwo}`;
+  const rightAnswear = gcd(numberOne, numberTwo);
+  return [askQuestion, rightAnswear];
 };
 
-
-export default gcdGame;
+export default () => gamePlay(gameQuestion, gameName);
