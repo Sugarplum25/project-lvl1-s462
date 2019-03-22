@@ -1,4 +1,7 @@
 
+//непонятно, почему когда запускаю игры, некорректно отображается второй аргумент - rightAnswear, 
+
+
 import readlineSync from 'readline-sync';
 
 import { car, cdr } from 'hexlet-pairs';
@@ -21,7 +24,7 @@ const gamePlay = (gameQuestion, gameName) => {
     console.log(`Question: ${askQuestion}`);
     const rightAnswear = cdr(gameQuestion());
     const userAnswer = readlineSync.question('Your answer: ');
-    console.log(userAnswer);
+    console.log(rightAnswear);
     if (userAnswer === rightAnswear) {
       console.log('Correct!');
     } else {
