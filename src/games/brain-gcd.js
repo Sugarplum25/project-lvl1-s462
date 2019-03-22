@@ -13,7 +13,7 @@ const gameName = 'Find the greatest common divisor of given numbers';
 const gameQuestion = () => {
   const numberOne = generateNumber(1, 10);
   const numberTwo = generateNumber(1, 10);
-  const askQuestion = `${numberOne}, ${numberTwo}`;
+  const askQuestion = `${numberOne} and ${numberTwo}`;
   const rightAnswear = gcd(numberOne, numberTwo);
   return [askQuestion, rightAnswear];
 };
