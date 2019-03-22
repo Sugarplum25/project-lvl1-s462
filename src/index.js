@@ -1,17 +1,10 @@
-
-//непонятно, почему когда запускаю игры, некорректно отображается второй аргумент - rightAnswear, 
-
-
 import readlineSync from 'readline-sync';
-
-import { car, cdr } from 'hexlet-pairs';
-
 
 const wellcome = () => {
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name?');
-  console.log(`Hello, ${name}!`);
-  return name;
+  const playerName = readlineSync.question('May I have your name?');
+  console.log(`Hello, ${playerName}!`);
+  return playerName;
 };
 
 const gamesRound = 3;
@@ -20,11 +13,12 @@ const gamePlay = (gameQuestion, gameName) => {
   const userName = wellcome(gameName);
   console.log(gameName);
   for (let i = 0; i < gamesRound; i += 1) {
-    const askQuestion = car(gameQuestion());
+    const {
+      askQuestion,
+      rightAnswear,
+    } = gameQuestion();
     console.log(`Question: ${askQuestion}`);
-    const rightAnswear = cdr(gameQuestion());
     const userAnswer = readlineSync.question('Your answer: ');
-    console.log(rightAnswear);
     if (userAnswer === rightAnswear) {
       console.log('Correct!');
     } else {
