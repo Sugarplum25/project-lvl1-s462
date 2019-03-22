@@ -1,3 +1,5 @@
+import { cons } from 'hexlet-pairs';
+
 import gamePlay from '..';
 
 import generateNumber from '../utilis';
@@ -5,7 +7,7 @@ import generateNumber from '../utilis';
 const listOfOperators = ['+', '-', '*'];
 const indexOfOperators = Math.floor(Math.random() * listOfOperators.length);
 
-const gameName = 'Answer "yes" if number even otherwise answer "no".';
+const gameName = 'What is the result of the expression?';
 
 const gameQuestion = () => {
   const numberOne = generateNumber(1, 10);
@@ -31,7 +33,8 @@ const gameQuestion = () => {
 
   const askQuestion = (`${numberOne} ${randomOperator} ${numberTwo}`);
   const rightAnswear = String(pickExpression(randomOperator));
-  return [askQuestion, rightAnswear];
+
+  return cons(askQuestion, rightAnswear);
 };
 
 export default () => gamePlay(gameQuestion, gameName);

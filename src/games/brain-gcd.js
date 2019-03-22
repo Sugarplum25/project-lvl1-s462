@@ -1,3 +1,5 @@
+import { cons } from 'hexlet-pairs';
+
 import gamePlay from '..';
 
 import generateNumber from '../utilis';
@@ -14,8 +16,8 @@ const gameQuestion = () => {
   const numberOne = generateNumber(1, 10);
   const numberTwo = generateNumber(1, 10);
   const askQuestion = `${numberOne} and ${numberTwo}`;
-  const rightAnswear = gcd(numberOne, numberTwo);
-  return [askQuestion, rightAnswear];
+  const rightAnswear = (gcd(numberOne, numberTwo));
+  return cons(askQuestion, String(rightAnswear));
 };
 
 export default () => gamePlay(gameQuestion, gameName);
