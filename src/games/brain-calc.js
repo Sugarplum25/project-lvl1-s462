@@ -1,5 +1,3 @@
-import { cons } from 'hexlet-pairs';
-
 import gamePlay from '..';
 
 import generateNumber from '../utilis';
@@ -32,9 +30,13 @@ const gameQuestion = () => {
   };
 
   const askQuestion = (`${numberOne} ${randomOperator} ${numberTwo}`);
+
   const rightAnswear = String(pickExpression(randomOperator));
 
-  return cons(askQuestion, rightAnswear);
+  return {
+    askQuestion,
+    rightAnswear,
+  };
 };
 
 export default () => gamePlay(gameQuestion, gameName);
