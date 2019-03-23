@@ -11,11 +11,11 @@
 
 **How to play** 
 
-**Let's try to guess if number even or not** :arrow_right: :arrow_right: :arrow_right:*brain-even*
+**Let's try to guess if number even or not** :arrow_right: :arrow_right: :arrow_right: *brain-even*
 [![asciicast](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V.svg)](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V)
 
-**Guess the result of the expression** (*brain-calc*)
+**Calculate the result of the expression** :arrow_right: :arrow_right: :arrow_right: *brain-calc*
 [![asciicast](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y.svg)](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y)
 
-**Fins greatest common divisor** (*brain-gcd*)
+**Find greatest common divisor** :arrow_right: :arrow_right: :arrow_right: *brain-gcd*
 [![asciicast](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8.svg)](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8)
