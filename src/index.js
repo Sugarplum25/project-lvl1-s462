@@ -4,12 +4,12 @@ console.log('Welcome to the Brain Games!');
 
 const gamesRound = 3;
 
-const playGame = (getQuestion, gameName) => {
+const playGame = (generateGameData, gameDescription) => {
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
-  console.log(gameName);
+  console.log(gameDescription);
   for (let i = 0; i < gamesRound; i += 1) {
-    const { question, rightAnswear } = getQuestion();
+    const { question, rightAnswear } = generateGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === rightAnswear) {
