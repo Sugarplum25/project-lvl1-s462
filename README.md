@@ -4,11 +4,12 @@
 
 [![Build Status](https://travis-ci.com/Sugarplum25/project-lvl1-s462.svg?branch=master)](https://travis-ci.com/Sugarplum25/project-lvl1-s462)
 
-How to install games
+**How to install games**
+
 
 [![asciicast](https://asciinema.org/a/gf6NwhCZWVWnOQzaRLZgFPgIW.svg)](https://asciinema.org/a/gf6NwhCZWVWnOQzaRLZgFPgIW)
 
-How to play 
+**How to play** 
 
 Let's try to guess if number even or not  
 [![asciicast](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V.svg)](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V)
