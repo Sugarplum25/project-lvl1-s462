@@ -9,10 +9,7 @@ const gameName = 'Answer "yes" if number even otherwise answer "no".';
 const getQuestion = () => {
   const question = generateNumber(1, 1000);
   const rightAnswear = isEven(question) ? 'yes' : 'no';
-  return {
-    question,
-    rightAnswear,
-  };
+  return { question, rightAnswear };
 };
 
 export default () => playGame(getQuestion, gameName);
