@@ -1,42 +1,36 @@
-import gamePlay from '..';
+import playGame from '..';
 
 import generateNumber from '../utilis';
 
-const listOfOperators = ['+', '-', '*'];
-const indexOfOperators = Math.floor(Math.random() * listOfOperators.length);
-
 const gameName = 'What is the result of the expression?';
 
-const gameQuestion = () => {
-  const numberOne = generateNumber(1, 10);
-  const numberTwo = generateNumber(1, 10);
-  const randomOperator = listOfOperators[indexOfOperators];
-  const pickExpression = (char) => {
-    let resultOfExpression;
-    switch (char) {
-      case '+':
-        resultOfExpression = numberOne + numberTwo;
-        break;
-      case '-':
-        resultOfExpression = numberOne - numberTwo;
-        break;
-      case '*':
-        resultOfExpression = numberOne * numberTwo;
-        break;
-      default:
-        break;
-    }
-    return resultOfExpression;
-  };
+const listOfOperators = ['+', '-', '*'];
 
-  const askQuestion = (`${numberOne} ${randomOperator} ${numberTwo}`);
-
-  const rightAnswear = String(pickExpression(randomOperator));
-
-  return {
-    askQuestion,
-    rightAnswear,
-  };
+const getResultOfExpression = (num1, num2, sigh) => {
+  let result;
+  switch (sigh) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      break;
+  }
+  return result;
 };
 
-export default () => gamePlay(gameQuestion, gameName);
+const getQuestion = () => {
+  const numberOne = generateNumber(1, 10);
+  const numberTwo = generateNumber(1, 10);
+  const index = listOfOperators[generateNumber(0, listOfOperators.length)];
+  const question = (`${numberOne} ${index} ${numberTwo}`);
+  const rightAnswear = String(getResultOfExpression(numberOne, numberTwo, index));
+  return { question, rightAnswear };
+};
+
+export default () => playGame(getQuestion, gameName);
