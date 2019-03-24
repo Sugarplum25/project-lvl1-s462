@@ -18,10 +18,10 @@ const choseElement = (firstNumber, step, progressionLength) => {
 };
 
 const buildProgression = (firstNumber, step, hiddenElement, progressionLength) => {
-  let progression = '';
+  let progression = ' ';
   for (let i = 1; i <= progressionLength; i += 1) {
     if (i === hiddenElement) {
-      progression += '.. ';
+      progression += ' .. ';
     } else {
       progression += `${choseElement(firstNumber, step, i)} `;
     }
@@ -31,9 +31,9 @@ const buildProgression = (firstNumber, step, hiddenElement, progressionLength) =
 };
 
 const generateGameData = () => {
-  const firstNumber = generateNumber(1, 100);
-  const step = generateNumber(1, 20);
   const progressionLength = 10;
+  const firstNumber = generateNumber(1, 100);
+  const step = generateNumber(1, progressionLength);
   const hiddenElement = generateNumber(1, progressionLength);
   const rightAnswear = String(choseElement(firstNumber, step, hiddenElement));
   const question = buildProgression(firstNumber, step, hiddenElement, progressionLength);
