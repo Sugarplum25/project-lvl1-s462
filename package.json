@@ -1,6 +1,6 @@
 {
   "name": "brain_games_by_mari",
-  "version": "1.4.2",
+  "version": "1.5.6",
   "description": "play brain games on your console",
   "main": "",
   "bin": {
@@ -8,7 +8,7 @@
     "brain-calc": "dist/bin/calc.js",
     "brain-gcd": "dist/bin/gcd.js",
     "brain-progression": "dist/bin/progression.js",
-    "brain-prime": "dist/bin/prime"
+    "brain-prime": "dist/bin/prime.js"
   },
   "files": [
     "dist"

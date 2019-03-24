@@ -16,8 +16,6 @@ prog:
 prime: 
 	npx babel-node src/bin/prime.js			
 
-
-
 publish: 
 	npm publish
 

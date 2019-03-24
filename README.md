@@ -24,11 +24,11 @@ if you want to rad about prime numbers <https://ru.wikipedia.org/wiki/%D0%9F%D1%
 * progression game: you need to determine what number is missing in an arithmetic progression
 
 **How to play brain-games**
-:arrow_right: :arrow_right: :arrow_right: just type  ```even``` to play even game 
+:arrow_right: :arrow_right: :arrow_right: just type  ```brain-even``` to play even game 
 [![asciicast](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V.svg)](https://asciinema.org/a/kbuMh58P4ZWicwyxcCZKFdC3V)
 
-:arrow_right: :arrow_right: :arrow_right: just type  ```calc``` to play calc game 
+:arrow_right: :arrow_right: :arrow_right: just type  ```brain-calc``` to play calc game 
 [![asciicast](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y.svg)](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y)
 
-:arrow_right: :arrow_right: :arrow_right: just type  ```gcd``` to play gcd game 
+:arrow_right: :arrow_right: :arrow_right: just type  ```brain-gcd``` to play gcd game 
 [![asciicast](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8.svg)](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8)
