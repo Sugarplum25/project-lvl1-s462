@@ -32,10 +32,13 @@ if you want to learn more about prime numbers:
 
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-calc``` to play calc game 
 [![asciicast](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y.svg)](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y)
+
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-gcd``` to play gcd game 
 [![asciicast](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8.svg)](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8)
+
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-prime``` to play gcd game
 [![asciicast](https://asciinema.org/a/UJXYZELqzlQxdcRblzFHLqEO4.svg)](https://asciinema.org/a/UJXYZELqzlQxdcRblzFHLqEO4)
+
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-progression``` to play gcd game
 [![asciicast](https://asciinema.org/a/sl6EKHhc1YtiCQAJUAY0zw455.svg)](https://asciinema.org/a/sl6EKHhc1YtiCQAJUAY0zw455)
 
