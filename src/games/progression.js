@@ -1,42 +1,31 @@
-// Перечитала все обсуждения, нашла ссылку, где вы алгоритм даете,
-// для поиска элемента прогрессии. Я, кажется, поняла разницу между
-// индексом и самим элементом)
-
-// Не знаю, успею ли в эту проверку...
-
 import playGame from '..';
-
 import generateNumber from '../utilis';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const choseElement = (firstNumber, step, progressionLength) => {
-  if (progressionLength > 1) {
-    return firstNumber + (step * (progressionLength - 1));
-  }
-  return firstNumber;
-};
 
-const buildProgression = (firstNumber, step, hiddenElement, progressionLength) => {
-  let progression = ' ';
-  for (let i = 1; i <= progressionLength; i += 1) {
-    if (i === hiddenElement) {
-      progression += ' .. ';
+const length = 10;
+
+
+const buildGameQuestion = (firstNumber, step, hiddenElementIndex) => {
+  let progression = '';
+  for (let i = 0; i < length; i += 1) {
+    if (i === hiddenElementIndex) {
+      progression = `${progression} ..`;
     } else {
-      progression += `${choseElement(firstNumber, step, i)} `;
+      const elementToHide = firstNumber + step * i;
+      progression = `${progression} ${elementToHide}`;
     }
   }
-
   return progression;
 };
 
 const generateGameData = () => {
-  const progressionLength = 10;
   const firstNumber = generateNumber(1, 100);
-  const step = generateNumber(1, progressionLength);
-  const hiddenElement = generateNumber(1, progressionLength);
-  const rightAnswear = String(choseElement(firstNumber, step, hiddenElement));
-  const question = buildProgression(firstNumber, step, hiddenElement, progressionLength);
+  const step = generateNumber(1, length);
+  const hiddenElementIndex = generateNumber(0, length - 1);
+  const rightAnswear = String(firstNumber + step * hiddenElementIndex);
+  const question = buildGameQuestion(firstNumber, step, hiddenElementIndex);
   return { rightAnswear, question };
 };
 export default () => playGame(generateGameData, gameDescription);
