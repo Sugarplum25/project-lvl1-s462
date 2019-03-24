@@ -1,5 +1,4 @@
 import playGame from '..';
-
 import generateNumber from '../utilis';
 
 const isEven = number => number % 2 === 0;

@@ -1,5 +1,4 @@
 import playGame from '..';
-
 import generateNumber from '../utilis';
 
 const getGcd = (num1, num2) => {
