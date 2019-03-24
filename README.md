@@ -20,8 +20,10 @@ npm install -g brain_games_by_mari
 * calc game: here need to calculate the result of the expression
 * gcd game: try to determine the greatest common factor of two numbers
 * prime game: try to guess whether the number is prime 
+
 if you want to learn more about prime numbers:
 <https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE>
+
 * progression game: you need to determine what number is missing in an arithmetic progression
 
 **How to play brain-games**
