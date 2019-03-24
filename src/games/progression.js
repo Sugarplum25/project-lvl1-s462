@@ -1,7 +1,8 @@
-// Я немного зависла с замечаниями по прогрессии.
-// Не совсем поняла, почему не подходит индекс элемента?
-// В задании написано: заменив любое из чисел двумя точками (с)....
-// PS остальные замечания отработала.
+// Перечитала все обсуждения, нашла ссылку, где вы алгоритм даете,
+// для поиска элемента прогрессии. Я, кажется, поняла разницу между
+// индексом и самим элементом)
+
+// Не знаю, успею ли в эту проверку...
 
 import playGame from '..';
 
@@ -9,25 +10,33 @@ import generateNumber from '../utilis';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const progressionLength = 10;
-
-const buildProgression = () => {
-  const firstNumber = generateNumber(0, progressionLength);
-  const step = generateNumber(1, progressionLength);
-  const progression = [];
-  for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(firstNumber + step * i);
+const choseElement = (firstNumber, step, progressionLength) => {
+  if (progressionLength > 1) {
+    return firstNumber + (step * (progressionLength - 1));
   }
+  return firstNumber;
+};
+
+const buildProgression = (firstNumber, step, hiddenElement, progressionLength) => {
+  let progression = '';
+  for (let i = 1; i <= progressionLength; i += 1) {
+    if (i === hiddenElement) {
+      progression += '.. ';
+    } else {
+      progression += `${choseElement(firstNumber, step, i)} `;
+    }
+  }
+
   return progression;
 };
 
 const generateGameData = () => {
-  const progression = buildProgression();
-  const hiddenElement = generateNumber(0, progressionLength);
-  const rightAnswear = String(progression[hiddenElement]);
-  progression[hiddenElement] = '..';
-  const question = progression.join(' ');
-  return { question, rightAnswear };
+  const firstNumber = generateNumber(1, 100);
+  const step = generateNumber(1, 20);
+  const progressionLength = 10;
+  const hiddenElement = generateNumber(1, progressionLength);
+  const rightAnswear = String(choseElement(firstNumber, step, hiddenElement));
+  const question = buildProgression(firstNumber, step, hiddenElement, progressionLength);
+  return { rightAnswear, question };
 };
-
 export default () => playGame(generateGameData, gameDescription);
