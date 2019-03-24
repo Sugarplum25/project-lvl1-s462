@@ -20,7 +20,8 @@ npm install -g brain_games_by_mari
 * calc game: here need to calculate the result of the expression
 * gcd game: try to determine the greatest common factor of two numbers
 * prime game: try to guess whether the number is prime 
-if you want to rad about prime numbers <https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE>
+if you want to learn more about prime numbers:
+<https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE>
 * progression game: you need to determine what number is missing in an arithmetic progression
 
 **How to play brain-games**
@@ -29,6 +30,14 @@ if you want to rad about prime numbers <https://ru.wikipedia.org/wiki/%D0%9F%D1%
 
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-calc``` to play calc game 
 [![asciicast](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y.svg)](https://asciinema.org/a/xJcd7m6bYcH6y2tdg9jUy0Z5Y)
-
 :arrow_right: :arrow_right: :arrow_right: just type  ```brain-gcd``` to play gcd game 
 [![asciicast](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8.svg)](https://asciinema.org/a/DCyq5goeDaEc5U9dZUWA47hC8)
+:arrow_right: :arrow_right: :arrow_right: just type  ```brain-prime``` to play gcd game
+[![asciicast](https://asciinema.org/a/UJXYZELqzlQxdcRblzFHLqEO4.svg)](https://asciinema.org/a/UJXYZELqzlQxdcRblzFHLqEO4)
+:arrow_right: :arrow_right: :arrow_right: just type  ```brain-progression``` to play gcd game
+[![asciicast](https://asciinema.org/a/sl6EKHhc1YtiCQAJUAY0zw455.svg)](https://asciinema.org/a/sl6EKHhc1YtiCQAJUAY0zw455)
+
+Or, is you want to unistall games, just type 
+```
+npm uninstall -g brain_games_by_mari
+```
