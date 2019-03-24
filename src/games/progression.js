@@ -3,9 +3,7 @@ import generateNumber from '../utilis';
 
 const gameDescription = 'What number is missing in the progression?';
 
-
 const length = 10;
-
 
 const buildGameQuestion = (firstNumber, step, hiddenElementIndex) => {
   let progression = '';
