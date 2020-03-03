@@ -34,6 +34,7 @@
     "eslint-plugin-import": "^2.16.0"
   },
   "dependencies": {
-    "readline-sync": "^1.4.9"
+    "readline-sync": "^1.4.9",
+    "yaml": "^1.7.2"
   }
 }
