@@ -1,7 +1,7 @@
 import playGame from '..';
 import generateNumber from '../utilis';
 
-const gameDescription = 'What is the result of the expression?';
+const gameDescription = 'Guess, what is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 

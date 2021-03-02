@@ -8,7 +8,7 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-const gameDescription = 'Find the greatest common divisor of given numbers';
+const gameDescription = 'Find the greatest common divisor of two given numbers';
 
 const generateGameData = () => {
   const numberOne = generateNumber(1, 100);

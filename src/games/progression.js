@@ -1,7 +1,7 @@
 import playGame from '..';
 import generateNumber from '../utilis';
 
-const gameDescription = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the given progression?';
 
 const length = 10;
 
